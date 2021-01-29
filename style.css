@@ -11,7 +11,11 @@ body{
 }
 
 header{
-    margin:1.5em 0 1.5em 0;
+    margin:1.5em 0 2.5em 0;
+}
+
+main{
+    margin:auto;
 }
 
 header, nav, ul{
@@ -38,7 +42,29 @@ a:hover{
 
 h1{
     font-weight:750;
-    margin-bottom:0;
+    margin:0;
+}
+
+h2{
+    font-size:1em;
+    font-weight:800;
+    line-height:.5em;
+}
+
+p{
+    font-size:1.2em;
+    font-weight:750;
+    line-height:.5em;
+}
+
+.p-article-item{
+    font-size:.9em;
+    font-weight:500;
+}
+
+.result-caption{
+    font-size:1em;
+    font-weight:500;
 }
 
 .light{
@@ -79,4 +105,111 @@ input{
     padding:.9em;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
+}
+
+#filters-wrap{
+    display:flex;
+    margin:2em 0 2em 0;
+}
+
+.filter-type{
+    display:flex;
+    margin-left:2em;
+    padding:0 1em 0 0;
+    border:solid rgb(202, 202, 202) 2px;
+    border-left:none;
+    border-radius:2em;
+}
+.icon-wrap{
+    background:rgb(224, 243, 255);
+    width:3em;
+    height:3em;
+    margin:auto;
+    margin-right:1em;
+    border-radius:100%;
+    display:flex;
+}
+.icon-filter{
+    margin:auto;
+}
+
+#results-section-wrap{
+    background:rgb(59, 209, 247);
+    padding:2em;
+    margin-top:2em;
+    display:flex;
+}
+
+#results-flex-container{
+    display:flex;
+}
+
+#acommodations{
+    background:red;
+    margin-right:2em;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+#items-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.acommodations-item{
+    width:100%;
+    max-width:250px;
+    padding:5px;
+    background:#fff;
+    border-radius:2em;
+    display:flex;
+    flex-direction: column;
+    margin:1em 2em 1em 0;
+}
+
+.article-img-container{
+    border-top-left-radius: 1.8em;
+    border-top-right-radius: 1.8em;
+    height:115px;
+    overflow:hidden;
+}
+
+.article-text-container{
+    margin-left:1em;
+}
+
+.star-wrapper{
+    justify-self: flex-end;
+}
+
+.img-article-item{
+    margin:auto;
+    width:100%;
+    position:relative;
+    transform: translateY(-65px);
+}
+
+#popular{
+    background:blue;
+    display:flex;
+    flex-direction: column;
+}
+
+.popular-item{
+    display:flex;
+}
+
+#popular-flex-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.popular-text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-img-container{
+    max-width:150px;
+    overflow:hidden;
 }
