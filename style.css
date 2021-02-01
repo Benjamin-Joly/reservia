@@ -135,6 +135,8 @@ input{
 
 #top-results-wrap{
     display:flex;
+    justify-content: space-between;
+    width:100%;
 }
 
 #hebergements-marseille{
@@ -152,7 +154,6 @@ input{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width:880px;
 }
 
 .acommodations-item{
@@ -253,4 +254,53 @@ input{
 }
 .star-inactive{
     color:rgb(221, 221, 221);
+}
+
+#activities-wrap{
+    width:100%;
+    max-height:445px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background:blue;
+}
+
+.article-column-wrap{
+    height:445px;
+    display:flex;
+    flex-direction: column;
+    background:red;
+}
+
+.activities-item-x2{
+    height:445px;
+    width:300px;
+    overflow: hidden;
+    background:#fff;
+}
+
+.activities-item{
+    display:flex;
+    flex-direction: column;
+    width:300px;
+    overflow: hidden;
+    background:#fff;
+}
+
+.img-x2{
+    width:auto;
+    height:90%;
+    margin:auto;
+}
+.img-x1{
+    width:100%;
+    height:auto;
+}
+
+
+.bg-img-container{
+    height:445px;
+    width:300px;
+    background-position: center;
+    background-size: cover;
 }
