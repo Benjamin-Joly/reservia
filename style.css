@@ -135,6 +135,10 @@ form button{
     padding:.9em;
 }
 
+.icon-search{
+    display:none;
+}
+
 input{
     padding:.8em;
     border:solid #f2f2f2 1px;
@@ -413,7 +417,13 @@ footer{
     margin:auto;
 }
 
+
+/*//////////////////////////////////////////////////////////////////////////V Tablette///////////*/
+
 @media (min-width: 540px) and (max-width: 1024px){
+
+/*Ajustements conteneur*/
+
     body{
         width:100vw;
         margin:0;
@@ -442,37 +452,215 @@ footer{
         margin:2em auto 1em auto;
     }
 
-    #filters-wrap h2{
-        font-size:1.2em;
-        margin:auto 1em auto 1em;
-    }
-    
-    .filter-type{
-        display:flex;
-        margin:1em auto;
-        padding:0 1em 0 0;
-        border:solid #d9d9d9 2px;
-        border-left:none;
-        border-radius:2em;
-    }
-
-    .result-caption{
-        margin:1em 0 3em 0;
-    }
-
     #side-list{
         max-width:100%;
         margin: -1em 0;
         order:-1;
     }
-    
+
+    #activities-wrap{
+        flex-direction:column;
+        min-height:fit-content;
+    }
+
+/*typo*/
+
+    #filters-wrap h2{
+        font-size:1.2em;
+        margin:auto 1em auto 1em;
+    }   
+    .filter-type{
+        margin:1em auto;
+    }
+    .filter-type:nth-child(4){
+        margin-right:0;
+    }
+    .filter-type:nth-child(5){
+        margin-right:0;
+    }
+    .result-caption{
+        margin:1em 0 3em 0;
+    }
+    #activities h1{
+        margin-top:0;
+    }
     #side-title{
         display:flex;
         justify-content: space-between;
         margin: 1em 0;
-    }
-    
+    } 
+
+/*Ajustements blocs*/
     .popular-item{
         margin: 1em 0;
     }
+    .article-column-wrap{
+        flex-direction:row;
+    }
+    .activities-item-small{
+        max-height:100%;
+    }
+    .activities-item-big{
+        max-width:100%;
+    }
+    .bg-img-container{
+        min-height:300px;
+    }
+    #footer-content-wrap{
+        max-width:90%;
+        justify-content:center;
+    }
+    .footer-bloc-typo{
+        margin-right:1em;
+    }
 }
+
+/*//////////////////////////////////////////////////////////////////////////V Mobile///////////*/
+
+@media (max-width: 540px){
+
+    /*Ajustements conteneur*/
+    
+        body{
+            width:100%;
+            margin:0;
+            background:red;
+        }
+        #main-content-wrap{
+            width:100%;
+            margin:auto;
+            background:green;
+        }
+  
+        header{
+            display:flex; 
+            flex-direction: column;
+            justify-content: space-between;
+            margin:0;
+        }
+    /*Ajustements Header*/
+    
+        #logo{
+            padding:1em;
+        }
+
+        nav{
+            justify-content: space-around;
+        }
+        
+        ul{
+            padding:0;
+            margin-bottom:0;
+        }
+        .menu-item{
+            display:flex;
+        }
+
+        .menu-item a{
+            display:inline-block;
+            padding:0;
+            margin:auto;
+        }
+
+        li{
+            flex:1;
+            padding-bottom:1em;
+            border-bottom: solid #0065fc 3px;
+            margin:0 2px 0 2px;
+        }
+
+        li:nth-child(3){
+            position:absolute;
+            top:1em;
+            right:1em;
+            padding-top:1em;
+            border-bottom: none;
+        }
+        nav, ul{
+            display:flex;
+            flex:1;
+            list-style-type: none;
+        }
+    
+        #top-results-wrap{
+            flex-direction: column;
+        }
+    
+        #hebergements-marseille{
+            margin:2em 0 2em 0;
+        }
+    
+        #filters-wrap{
+            display:flex;
+            flex-wrap: wrap;
+            margin:2em auto 1em auto;
+        }
+    
+        #side-list{
+            max-width:100%;
+            margin: -1em 0;
+            order:-1;
+        }
+    
+        #activities-wrap{
+            flex-direction:column;
+            min-height:fit-content;
+        }
+    
+    /*typo*/
+    
+        #filters-wrap h2{
+            font-size:1.2em;
+            margin:auto 1em auto 1em;
+        }   
+        .filter-type{
+            margin:1em auto;
+        }
+        .filter-type:nth-child(4){
+            margin-right:0;
+        }
+        .filter-type:nth-child(5){
+            margin-right:0;
+        }
+        .result-caption{
+            margin:1em 0 3em 0;
+        }
+        #activities h1{
+            margin-top:0;
+        }
+        #side-title{
+            display:flex;
+            justify-content: space-between;
+            margin: 1em 0;
+        } 
+    
+    /*Ajustements blocs*/
+    form button{
+        display:none;
+    }
+    .icon-search{
+        display:block;
+    }
+        .popular-item{
+            margin: 1em 0;
+        }
+        .article-column-wrap{
+            flex-direction:column;
+        }
+        .activities-item-small{
+            max-height:100%;
+        }
+        .activities-item-big{
+            max-width:100%;
+        }
+        .bg-img-container{
+            min-height:300px;
+        }
+        #footer-content-wrap{
+            max-width:90%;
+            justify-content:center;
+        }
+        .footer-bloc-typo{
+            margin-right:1em;
+        }
+    }
