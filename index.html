@@ -29,30 +29,34 @@
                     <p class='light'>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <form action="post">
-                    <i class="fas fa-map-marker-alt map-icon"></i>
-                    <input type="text" name="Location" value="Marseille, France" maxlength="100" submit="Rechercher">
-                    <i class="fas fa-search icon-search"></i>
-                    <button>Rechercher</button>
+                    <div id="form-items-container">
+                        <i class="fas fa-map-marker-alt map-icon"></i>
+                        <input type="text" name="Location" value="Marseille, France" maxlength="100" submit="Rechercher">
+                        <i class="fas fa-search icon-search"></i>
+                        <button>Rechercher</button>
+                    </div>                 
                 </form>
-                <div id="filters-wrap">
+                <section id="filters-wrap">
                     <h2>Filtres</h2>
-                    <div class="filter-type">
-                        <div class="icon-wrap"><i class="fas fa-money-bill-wave icon-filter"></i></div>
-                        <p>Économique</p>
+                    <div id="filters">
+                        <div class="filter-type">
+                            <div class="icon-wrap"><i class="fas fa-money-bill-wave icon-filter"></i></div>
+                            <p>Économique</p>
+                        </div>
+                        <div class="filter-type">
+                            <div class="icon-wrap"><i class="fas fa-child icon-filter"></i></div>
+                            <p>Familial</p>
+                        </div>
+                        <div class="filter-type">
+                            <div class="icon-wrap"><i class="fas fa-heart icon-filter"></i></div>
+                            <p>Romantique</p>
+                        </div>
+                        <div class="filter-type">
+                            <div class="icon-wrap"><i class="fas fa-dog icon-filter"></i></div>
+                            <p>Animaux autorisés</p>
+                        </div>
                     </div>
-                    <div class="filter-type">
-                        <div class="icon-wrap"><i class="fas fa-child icon-filter"></i></div>
-                        <p>Familial</p>
-                    </div>
-                    <div class="filter-type">
-                        <div class="icon-wrap"><i class="fas fa-heart icon-filter"></i></div>
-                        <p>Romantique</p>
-                    </div>
-                    <div class="filter-type">
-                        <div class="icon-wrap"><i class="fas fa-dog icon-filter"></i></div>
-                        <p>Animaux autorisés</p>
-                    </div>
-                </div>
+                </section>
             </section>
             <div id="result-caption-wrap">
                 <div id="icon-result-caption"></div>
