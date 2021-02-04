@@ -119,6 +119,9 @@ p{
     font-weight:500;
     line-height:2em;
 }
+.footer-text p:hover{
+    text-decoration: overline;
+}
 
 .box-style{
     background:white;
@@ -146,6 +149,7 @@ p{
 form{
     margin:2em 0;
     display:flex;
+    background:yellow; 
 }
 
 #form-items-container{
@@ -273,9 +277,10 @@ input{
 }
 
 .article-img-container{
+    display: flex;;
     border-top-left-radius: 1.3em;
     border-top-right-radius: 1.3em;
-    height:115px;
+    width:auto;
     overflow:hidden;
 }
 
@@ -286,8 +291,9 @@ input{
 .img-article-item{
     margin:auto;
     width:100%;
-    position:relative;
-    transform: translateY(-65px);
+    max-height:115px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /*Bloc 1 - articles droite*/
@@ -328,20 +334,21 @@ input{
 }
 
 .popular-article-img-container{
-    max-width:125px;
-    max-height:132px;
-    overflow:hidden;
-    -webkit-mask-image:-webkit-radial-gradient(white, black);
+    display: flex;
+   /* overflow:hidden;
+    -webkit-mask-image:-webkit-radial-gradient(white, black);*/
 }
 
 .popular-img-article-item{
-    height:100%;
+    max-height:100%;
+    max-width:125px;
+    object-fit: cover;
     border-top-left-radius: 1.2em;
     border-bottom-left-radius: 1.2em;
 }
 
 .popular-article-text-container{
-    margin-left:2em;
+    margin:0 1.2em 0 1.2em;
 }
 
 /*Bloc 1 - étoiles*/
@@ -371,6 +378,7 @@ input{
     flex-wrap: wrap;
     justify-content: space-between;
     margin:0;
+    background:red;
 }
 
 #activities h1{
@@ -470,6 +478,7 @@ footer{
 .footer-bloc-typo{
     flex:1;
     margin-left:1.2em;
+    background:coral;
 }
 
 

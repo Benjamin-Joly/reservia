@@ -50,7 +50,7 @@
             margin:auto 1em auto 0;
         }   
         .filter-type{
-            margin:1em auto;
+            margin: 1em 1em 0 0;
         }
         .filter-type:nth-child(4){
             margin-right:0;
@@ -73,6 +73,12 @@
     /*Ajustements blocs*/
         .popular-item{
             margin: 1em 0;
+        }
+        .popular-img-article-item{
+            max-width:150px;
+        }
+        .popular-article-text-container{
+            margin-left:1.2em;
         }
         .article-column-wrap{
             flex-direction:row;
@@ -270,6 +276,9 @@
             .popular-item{
                 margin: 1em 0;
             }
+            .popular-article-text-container{
+                margin-left:1.2em;
+            }
             .article-column-wrap{
                 flex-direction:column;
             }
@@ -449,7 +458,7 @@
                 form{
                     width:100%;
                     margin:auto;
-                    justify-content: space-around;       
+                    justify-content: space-around;      
                 }
                 #form-items-container{
                     width:auto;
@@ -472,6 +481,7 @@
                 .popular-item{
                     margin: 1em 0;
                 }
+               
                 .article-column-wrap{
                     flex-direction:column;
                 }
