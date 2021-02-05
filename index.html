@@ -10,19 +10,19 @@
     <title>Reservia</title>
 </head>
 <body>
+    <header>
+        <div id="logo">
+            <img src="images/logo/Reservia.svg" alt="Logo Reservia">
+        </div>
+        <nav>
+            <ul>
+                <li class="menu-item"><a href="#" class="link-menu">Hébergements</a></li>
+                <li class="menu-item"><a href="#"class="link-menu">Activités</a></li>
+                <li class="menu-item"><a href="#" class="link-menu">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
     <div id="main-content-wrap">
-        <header>
-            <div id="logo">
-                <img src="images/logo/Reservia.svg" alt="Logo Reservia">
-            </div>
-            <nav>
-                <ul>
-                    <li class="menu-item"><a href="#">Hébergements</a></li>
-                    <li class="menu-item"><a href="#">Activités</a></li>
-                    <li class="menu-item"><a href="#">S'inscrire</a></li>
-                </ul>
-            </nav>
-        </header>
         <main>
             <section id="bloc-search">
                 <div id="wrap-title">
@@ -61,8 +61,11 @@
                     </div>
                 </section>
             </section>
-            <div id="result-caption-wrap">     
-                <p class="result-caption"> <i class="fas fa-info info-icon"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div id="result-caption-wrap">
+                <div id="info-wrap">
+                    <i class="fas fa-info info-icon"></i> 
+                </div>    
+                <p class="result-caption">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
            <section id="top-results-wrap">
                <section id="hebergements-marseille">
@@ -267,27 +270,26 @@
         <div id='footer-content-wrap'>
             <div class="footer-bloc-typo">
                 <p>À propos</p>
-                <p class="footer-text">
-                    Fonctionnement du site <br>
-                    Conditions générales de vente <br>
-                    Données et confidentialité
-                </p>
+                <div class="footer-text">
+                   <a href="#" class="footer-link"><p>Fonctionnement du site</p></a>
+                   <a href="#" class="footer-link"><p>Conditions générales de vente</p></a>
+                   <a href="#" class="footer-link"><p>Données et confidentialité</p></a>  
+                </div>
             </div>
             <div class="footer-bloc-typo">
                 <p>Nos Hébergements</p>
-                <p class="footer-text">
-                    Charte qualité <br>
-                    Soumettre votre hotel
-                </p>
+                <div class="footer-text">
+                    <a href="#" class="footer-link"><p>Charte qualité</p></a>
+                    <a href="#" class="footer-link"><p>Soumettre votre hotel</p></a>                
+                </div>
             </div>
             <div class="footer-bloc-typo">
                 <p>Assistance</p>
-                <p class="footer-text">
-                    Centre d'aide <br>
-                    Nous contacter
-                </p>
+                <div class="footer-text">
+                    <a href="#" class="footer-link"><p>Centre d'aide</p></a>
+                    <a href="#" class="footer-link"><p>Nous contacter</p></a>     
+                </div>
             </div>
-
         </div>
     </footer>
 </body>

@@ -34,19 +34,16 @@ header, nav, ul{
 
 /*Typo*/
 
-ul li a{
+ul li .link-menu{
     text-decoration: none;
     font-weight:650;
 }
 
-a{
+.link-menu{
     padding:37px;
     border-top: solid #0065fc00 3px;
     transition: all ease .4s;
     color:#0065fc;
-}
-a:hover{
-    border-top: solid #0065fc 3px;
 }
 
 h1{
@@ -90,18 +87,24 @@ p{
 .filter-type p{
     line-height:.5em;
 }
+#info-wrap{
+    display:flex;
+    background:#ffffff;
+    border: 1px solid #f2f2f2;
+    border-radius:100%;
+    width:1.2em;
+    height:1.2em;
+    margin:auto .5em auto 0;
+}
 .info-icon{
     font-size:.8em;
     color:#0065fc;
-    background:#d9d9d9;
-    border-radius:100%;
-    margin:auto .4em auto 0;
-    padding:.2em .4em .2em .4em;
+    margin:auto;
 }
 .result-caption{
     font-size:1em;
     font-weight:500;
-    margin:1em 0 2em 0;
+    margin:auto 0 auto 0;
 }
 
 #display-more{
@@ -119,9 +122,6 @@ p{
     font-weight:500;
     line-height:2em;
 }
-.footer-text p:hover{
-    text-decoration: overline;
-}
 
 .box-style{
     background:white;
@@ -130,18 +130,10 @@ p{
     transition:all ease .4s;
 }
 
-.box-style:hover{
-    transform:scale(1.03);
-    box-shadow:2px 2px 20px #9c9c9c;
-}
-
 /*Header*/
 
 #logo{
     transition: all ease .3s
-}
-#logo:hover{
-    transform: scale(1.1);
 }
 
 /*Filtres & recherche*/
@@ -153,8 +145,6 @@ form{
 
 #form-items-container{
     display: flex;
-    height:100%;
-    width:100%;
 }
 
 form button{
@@ -165,12 +155,6 @@ form button{
     border:solid 1px #0065fc;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
-    padding:.9em;
-}
-
-form button:hover{
-    background:#4b93ff;
-    border-color: #4b93ff;
 }
 
 #icon-button-search{
@@ -221,17 +205,6 @@ input{
     border-radius:2em;
 }
 
-.filter-type:hover{
-    cursor:pointer;
-}
-.filter-type:hover .icon-filter{
-    cursor:pointer;
-    font-size:1.3em;
-}
-.filter-type:hover .icon-wrap{
-    transform: scale(1.1);
-}
-
 
 .icon-wrap{
     background:#deebff;
@@ -251,6 +224,11 @@ input{
 }
 
 /*Bloc 1 - articles gauche*/
+
+#result-caption-wrap{
+    display:flex;
+    margin: 1em 0 2em 0;
+}
 
 #top-results-wrap{
     display:flex;
@@ -343,8 +321,6 @@ input{
 
 .popular-article-img-container{
     display: flex;
-   /* overflow:hidden;
-    -webkit-mask-image:-webkit-radial-gradient(white, black);*/
 }
 
 .popular-img-article-item{
@@ -362,7 +338,7 @@ input{
     justify-content: space-between;
 }
 
-/*Bloc 1 - étoiles*/
+/*Bloc étoiles*/
 .fa-star{
     font-size:.8em;
     letter-spacing:-.2em;
@@ -419,26 +395,23 @@ input{
     max-width:300px;
 }
 
+/*Background-images Activités Marseille*/
+
 #vieux-port{
     background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
-
 #pomegues{
     background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
 }
-
 #frioul{
     background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
 }
-
 #calanques{
     background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
 }
-
 #longchamps{
     background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 }
-
 #notre-dame{
     background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 }
@@ -469,7 +442,6 @@ footer{
     background:#f2f2f2;
     margin-top:3em;
 }
-
 #footer-content-wrap{
     max-width:1440px;
     display:flex;
@@ -478,11 +450,23 @@ footer{
     padding:2em 0 2em 0;
     margin:auto;
 }
-
 .footer-bloc-typo{
     flex:1;
     margin-left:1.2em;
-    background:coral;
+    display:flex;
+    flex-direction:column;
 }
-
-
+.footer-link{
+    border:none;
+    font-size:1em;
+    font-weight:500;
+    line-height:1em;
+    text-decoration:none;
+    margin:auto;
+}
+.footer-link p{
+    font-size:1em;
+    font-weight:500;
+    color:black;
+    transition:.2s ease;
+}
