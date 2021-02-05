@@ -258,12 +258,18 @@
             #form-items-container{
                 width:auto;
                 margin:auto;
+                display:flex;
                 transform: scale(.78);
             }
     
-             form button{
+             form #text-button-search{
             display:none;
             }
+
+            #icon-button-search{
+                display:flex !important;
+            }
+
              .icon-search{
             display:block !important;
             margin:0;
@@ -278,6 +284,15 @@
             }
             .popular-article-text-container{
                 margin-left:1.2em;
+            }
+            .popular-article-text-container h2{
+                margin:.5em 0;
+            }
+            .popular-article-text-container p{
+                margin:.5em 0 .5em 0;
+            }
+            .popular-img-article-item{
+                width:100px;
             }
             .article-column-wrap{
                 flex-direction:column;
@@ -463,12 +478,18 @@
                 #form-items-container{
                     width:auto;
                     margin:auto;
-                    transform: scale(.7);
+                    transform: scale(.65);
                 }
         
-                 form button{
-                display:none;
-                }
+
+                form #text-button-search{
+                    display:none;
+                    }
+        
+                    #icon-button-search{
+                        display:flex !important;
+                    }
+
                  .icon-search{
                 display:block !important;
                 margin:0;
@@ -511,5 +532,15 @@
                 }
             .popular-img-article-item{
                 display:none;
+            }
+            #hebergements-marseille{
+                margin:0;
+            }
+            #hebergements-article-container{
+                margin:0;
+                max-width:280px;
+            }
+            .acommodations-item{
+                margin:1em auto 1em auto;
             }
         }
