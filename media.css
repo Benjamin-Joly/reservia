@@ -13,10 +13,11 @@
     }
     .filter-type:hover .icon-filter{
         cursor:pointer;
-        font-size:1.3em;
+        color:white;
     }
     .filter-type:hover .icon-wrap{
-        transform: scale(1.1);
+        transform: scale(1.2);
+        background:#0065fc;
     }
     form button:hover{
         background:#4b93ff;
@@ -89,7 +90,7 @@
     
     /*typo*/
     
-        #filters-wrap h2{
+        #filters-wrap h3{
             font-size:1.2em;
             margin:auto 1em auto 0;
         }   
@@ -105,7 +106,7 @@
         .result-caption{
             margin:auto 0 auto 0;
         }
-        #activities h1{
+        #activities h2{
             margin-top:0;
         }
         #side-title{
@@ -266,7 +267,7 @@
                 line-height:1.2em;
             }
         
-            #filters-wrap h2{
+            #filters-wrap h3{
                 font-size:1.2em;
                 margin:auto 1em auto 1em;
             }   
@@ -283,7 +284,7 @@
             .result-caption{
                 margin:auto 1em auto 1em;
             }
-            #activities h1{
+            #activities h2{
                 margin-top:0;
             }
             #side-title{
@@ -490,12 +491,12 @@
                     margin:2em;
                 }
         
-                #wrap-title h1{
+                #wrap-title h2{
                     font-size:1.2em;
                     line-height:1.2em;
                 }
             
-                #filters-wrap h2{
+                #filters-wrap h3{
                     font-size:1.2em;
                     margin:auto 1em auto 1em;
                 }   
@@ -513,7 +514,7 @@
                     font-size:.8em;
                     margin:auto 1em auto 1em;
                 }
-                #activities h1{
+                #activities h2{
                     margin-top:0;
                 }
                 #side-title{
@@ -521,6 +522,9 @@
                     justify-content: space-between;
                     margin: 1em 0;
                 } 
+                #display-more{
+                    margin:0;
+                }
             
             /*Ajustements blocs*/
         
@@ -581,7 +585,7 @@
                     min-height:150px;
                 }
                 .activities{
-                    margin:0 0 1em 0;
+                    margin:0;
                     width:100%;
                 }
                 #footer-content-wrap{

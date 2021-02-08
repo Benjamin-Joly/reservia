@@ -47,30 +47,30 @@ ul li .link-menu{
     color:#0065fc;
 }
 
-h1{
+h2{
     font-weight:725;
     margin:0;
 }
 
-#hebergements-marseille h1{
+#hebergements-marseille h2{
     margin:0 0 1.5em 0;
     font-size:1.4em;
     line-height:1;
 }
 
-#side-title h1{
+#side-title h2{
     overflow-wrap: normal;
     font-size:1.4em;
     line-height:1;
 }
 
-h2{
+h3{
     font-size:1em;
     font-weight:800;
     line-height:1em;
 }
 
-#filters-wrap h2{
+#filters-wrap h3{
     margin:auto 0 auto 1em;
 }
 
@@ -376,7 +376,7 @@ a.acommodations-item-link {
     margin:0;
 }
 
-#activities h1{
+#activities h2{
     margin: 2em 0 0.5em 0;
 }
 
@@ -447,7 +447,7 @@ a.acommodations-item-link {
     background-repeat: no-repeat;
 }
 
-.activities h2{
+.activities h3{
     margin:1em;
 }
 
