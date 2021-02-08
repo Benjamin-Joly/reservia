@@ -137,6 +137,17 @@ p{
     transition: all ease .3s
 }
 
+.link-menu:active{
+    color:rgb(75, 75, 75);
+}
+
+.link-menu:focus{
+    color:rgb(75, 75, 75);
+}
+
+.link-menu:target{
+    color:rgb(75, 75, 75);
+}
 /*Filtres & recherche*/
 
 form{

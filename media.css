@@ -41,7 +41,7 @@
 
 /*//////////////////////////////////////////////////////////////////////////V Tablette///////////*/
 
-@media (min-width: 541px) and (max-width: 1000px){
+@media (min-width: 685px) and (max-width: 1000px){
 
     /*Ajustements conteneur*/
     
@@ -149,7 +149,7 @@
     
     /*//////////////////////////////////////////////////////////////////////////V Mobile///////////*/
     
-    @media (min-width: 300px) and (max-width: 540px){
+    @media (min-width: 300px) and (max-width: 685px){
     
         /*Ajustements conteneur*/
         
