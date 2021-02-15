@@ -35,6 +35,11 @@
     }
     .link-menu:hover{
         border-top: solid #0065fc 3px;
+        color: #0065fc;
+    }
+    .link-menu:focus{
+        border-top: solid #0065fc 3px;
+        color: #0065fc;
     }
  }
 
