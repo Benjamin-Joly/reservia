@@ -148,6 +148,10 @@ p{
 .link-menu:target{
     color:rgb(75, 75, 75);
 }
+#sign-in{
+    font-weight:750;
+    color:#0065fc;
+}
 /*Filtres & recherche*/
 
 form{

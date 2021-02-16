@@ -123,6 +123,9 @@
             justify-content: space-between;
             margin: 1em 0;
         } 
+        .link-menu{
+            color:rgb(75, 75, 75);
+        }
     
     /*Ajustements blocs*/
         .popular-item{
@@ -301,6 +304,9 @@
                 justify-content: space-between;
                 margin: 1em 0;
             } 
+            .link-menu{
+                color:#0065fc;
+            }
         
         /*Ajustements blocs*/
     
@@ -534,7 +540,9 @@
                 #display-more{
                     margin:0;
                 }
-            
+                .link-menu{
+                    color:#0065fc;
+                }
             /*Ajustements blocs*/
         
                 form{
